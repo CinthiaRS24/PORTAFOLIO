@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- CEO  -------------------------------------------------->
+        <title>Portafolio - Cinthia Ramos</title>
+        <meta name="subject" content="Portafolio" />
+        <meta name="rating" content="General" />
+        <!-- ICONOS -->
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+        />
+        <!-- FUENTE -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- ESTILOS -->
+        <!-- Estilo global -->
+        <link rel="stylesheet" href="css/normalize/normalize.css" />
+        <link rel="stylesheet" href="css/styles/style.css" />
+        <link rel="stylesheet" href="css/styles/navbar.css" />
+        <link rel="stylesheet" href="css/styles/footer.css" />
+        <!-- Estilo de la página -->
+        <link rel="stylesheet" href="css/index.css" />
+        <!-- JAVASCRIPT -->
+        <!-- Datos -->
+        <script defer src="js/data/portfolio.js"></script>
+        <!-- Componentes -->
+        <script defer src="js/components/Portfolio.js"></script>
+        <!-- Renderizado de la página per se -->
+        <script defer src="js/scripts/navbar.js"></script>
+        <script defer src="js/scripts/portfolio.js"></script>
+    </head>
+    <body>
+        <script>
+            const tema = window.localStorage.getItem("tema");
+            (tema && tema === "light") || document.body.classList.add("dark-theme");
+        </script>
+        <header class="nav">
+            <nav class="nav__container u-center">
+                <ul class="nav__menu">
+                    <li>
+                        <a href="/" class="icon__container">
+                            <i class="icon uil uil-home"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="icon__container">
+                            <i class="icon uil uil-user"></i>
+                            Acerca de
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html" class="icon__container active">
+                            <i class="icon uil uil-bag-alt"></i>
+                            Portafolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="icon__container">
+                            <i class="icon uil uil-user-circle"></i>
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+                <button id="theme" class="toggle-theme">
+                    <i class="theme-icon uil uil-moon"></i>
+                </button>
+                <div class="toggle_menu">
+                    <i class="uil uil-bars"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section id="Portafolio" class="section portafolio">
+                <section class="u-center">
+                    <h1 class="portafolio__title">Mis proyectos</h1>
+                    <section id="proyectos" class="portafolio__body">
+                        <!-- JAVASCRIPT -->
+                    </section>
+
+                    <a href="contact.html" class="btn btn-more">Contactar</a>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <section class="u-center">
+                <section class="footer__body">
+                    <section>
+                        <h2>Secciones</h2>
+                        <ul class="footer__list">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="about.html">Acerca de</a></li>
+                            <li><a href="portfolio.html">Portafolio</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Contacto</h2>
+                        <div>
+                            <ul class="footer__rrss">
+                                <li class="mail">
+                                    <a
+                                        href="mailto:cinthia24027@gmail.com"
+                                        target="_blank"
+                                    >
+                                        cinthia24027@gmail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://api.whatsapp.com/send?phone=51990896363&text=Hola. He revisado su Portafolio, y le tengo el siguiente mensaje:"
+                                        target="_blank"
+                                        ><i class="uil uil-whatsapp icon2"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://github.com/CinthiaRS24"
+                                        target="_blank"
+                                        ><i class="uil uil-github icon2"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.linkedin.com/in/cinthia-stephany-ramos-suyon/"
+                                        target="_blank"
+                                        ><i class="uil uil-linkedin icon2"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </footer>
+    </body>
+</html>

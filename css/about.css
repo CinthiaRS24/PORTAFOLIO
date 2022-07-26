@@ -1,0 +1,163 @@
+/* ============ PERFIL ============= */
+.about {
+    color: var(--color-primary);
+}
+.about__title {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, #ff4d4d, #efb810);
+}
+
+.about__title-react {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, #61dafb, #5271ff);
+}
+
+.about__body {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    gap: 3rem;
+}
+
+.about__imagen {
+    width: 85%;
+    max-width: 22rem;
+    margin: auto;
+    background-color: var(--color-primary);
+    border-radius: 2rem;
+}
+
+.about__imagen img {
+    border-radius: 2rem;
+    transform: rotate(10deg);
+    transition: transform ease 0.3s;
+    aspect-ratio: 1;
+}
+
+.about__imagen img:hover {
+    transform: rotate(0);
+}
+
+.btn-about {
+    display: block;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.resume p {
+    margin-bottom: 0.8rem;
+}
+
+@media screen and (max-width: 991px) {
+    .about__body {
+        grid-template-columns: 1fr;
+    }
+
+    .about__body div:nth-child(1) {
+        order: 2;
+    }
+}
+
+/* ========== EDUCACIÓN =========== */
+.educacion__body {
+    padding: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgb(254, 197, 45);
+    border: var(--border);
+    color: var(--color-black);
+}
+
+.educacion__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.educacion__imagen {
+    max-width: 20rem;
+    margin: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.educacion__info-content {
+    color: var(--color-black2);
+}
+
+.educacion__temas {
+    margin: 0 1.5rem;
+}
+
+.educacion__temas li {
+    list-style: disc;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .educacion__info {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 600px) {
+    .educacion__body {
+        padding: 1rem;
+    }
+}
+
+/* ============= HOBBY ============= */
+.hobby__container {
+    max-width: 34rem;
+}
+
+.hobby__item {
+    padding: 0rem 1rem 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-color1);
+    border: var(--border);
+}
+
+.hobby__info {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hobby__imagen {
+    margin: 0 auto;
+    max-width: 12rem;
+    border-radius: 1rem;
+    background-color: var(--color-primary);
+}
+
+.hobby__imagen img {
+    border-radius: 1rem;
+    transform: rotate(10deg);
+    transition: transform 300ms ease;
+}
+
+.hobby__imagen img:hover {
+    transform: rotate(0);
+}
+
+@media screen and (max-width: 1024px) {
+    .hobby__item {
+        padding: 1rem;
+    }
+
+    .hobby__info {
+        gap: 1rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .hobby__info {
+        grid-template-columns: 1fr;
+    }
+}
